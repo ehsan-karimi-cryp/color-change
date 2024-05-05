@@ -19,6 +19,9 @@ body {
   align-items: center;
   height: 100vh;
 }
+.body-element {
+  transition: all 0.5s;
+}
 .color-text-button {
   display: flex;
   flex-direction: column;
