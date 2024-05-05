@@ -29,6 +29,7 @@ body {
   padding: 1.5rem;
   background-color: #fca96a;
   border-radius: 20px;
+  width: 50%;
 }
 .color-text {
   background-color: #420000;
@@ -42,15 +43,18 @@ body {
 .color-text-button div {
   margin: 3rem;
 }
-.color-button {
+.color-button1,
+.color-button2 {
   background-color: #f73232;
   padding: 0.8rem 2.5rem;
   font-size: 1.1rem;
   font-weight: bold;
   border-radius: 20px;
   transition: all 0.5s;
+  margin: 1.5rem;
 }
-.color-button:hover {
+.color-button1:hover,
+.color-button2:hover {
   background-color: #b80000;
   transform: scale(1.01);
 }

@@ -4,12 +4,13 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sweetalert2": "^11.10.8"
+    "sweetalert2": "^11.10.8",
+    "webpack": "^5.91.0"
   }
 }
