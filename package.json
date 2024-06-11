@@ -12,5 +12,8 @@
   "dependencies": {
     "sweetalert2": "^11.10.8",
     "webpack": "^5.91.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
   }
 }
