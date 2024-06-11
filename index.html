@@ -4,16 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color Change</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/responsive.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" /> -->
+    <link rel="stylesheet" href="./css/output.css" />
   </head>
-  <body class="body-element">
-    <section class="color-text-button">
-      <div class="color-text">This is a Text</div>
-      <button class="color-button1">Change Color</button>
-      <button class="color-button2">Change Automatically</button>
+  <body
+    class="body-element transition-all duration-200 flex justify-center items-center bg-rose-200 h-[100vh]"
+  >
+    <section
+      class="color-text-button container flex flex-col items-center justify-center"
+    >
+      <div
+        class="color-text bg-red-800 w-1/2 mx-auto text-center text-white py-10 text-xl rounded-md m-5"
+      >
+        Click the button to change color
+      </div>
+      <button
+        class="color-button1 bg-rose-500 text-white px-8 py-5 m-10 rounded-lg hover:bg-rose-600 transition-all duration-200"
+      >
+        Change Color
+      </button>
     </section>
 
     <script src="./script.js"></script>
   </body>
 </html>
+
+<!--
+      <button class="color-button2">Change Automatically</button>
+ -->
