@@ -10,9 +10,15 @@
     @apply container flex flex-col items-center justify-center;
   }
   .color-text {
-    @apply bg-red-800 w-1/2 mx-auto text-center text-white py-10 text-xl rounded-md m-5;
+    @apply bg-red-800 w-1/2 mx-auto text-center text-white py-10 text-xl rounded-md m-5 font-bold;
   }
   .color-button {
-    @apply bg-rose-500 text-white px-8 py-5 m-10 rounded-lg hover:bg-rose-600 transition-all duration-200;
+    @apply bg-rose-500 text-white px-8 py-5 m-10 rounded-lg hover:bg-rose-600 transition-all duration-200 font-bold;
+  }
+  .page-link {
+    @apply bg-yellow-400 text-black px-8 py-5 m-10 rounded-lg hover:bg-yellow-600 transition-all duration-200 font-bold;
+  }
+  .input-color {
+    @apply bg-slate-400 px-10 py-5 rounded-md m-8;
   }
 }
