@@ -15,39 +15,24 @@ const textAndNumbers = [
   "e",
   "f",
 ];
-var automaticChange = true;
-var automaticChangeFunction = "change";
-var randomElement = "#";
-var colorChangeInterval;
-const colorButton1 = document.querySelector(".color-button1");
-const colorButton2 = document.querySelector(".color-button2");
+const randomElement = () => {
+  return Math.floor(Math.random() * textAndNumbers.length);
+};
+const colorButton = document.querySelector(".color-button");
 const colorText = document.querySelector(".color-text");
 const bodyElement = document.querySelector(".body-element");
 
 function changeBackgroundColor() {
+  let elementsOfArray = "#";
   for (let i = 0; i < 6; i++) {
-    let arrayElement = Math.floor(Math.random() * textAndNumbers.length);
-    randomElement = randomElement + textAndNumbers[arrayElement];
+    let arrayElement = randomElement();
+    elementsOfArray = elementsOfArray + textAndNumbers[arrayElement];
   }
-  bodyElement.style.backgroundColor = randomElement;
-  colorText.innerHTML = "Color is " + randomElement;
+  bodyElement.style.backgroundColor = elementsOfArray;
+  colorText.innerHTML = "Color is " + elementsOfArray;
+  colorButton.style.transform = "scale(1.2)";
+  setTimeout(()=> {colorButton.style.transform = "scale(1)";} , 100)
   randomElement = "#";
 }
 
-colorButton1.addEventListener("click", changeBackgroundColor);
-colorButton2.addEventListener("click", () => {
-  if (automaticChange === true && automaticChangeFunction === "change") {
-    colorChangeInterval = setInterval(changeBackgroundColor, 500);
-    automaticChange = false;
-    automaticChangeFunction = "stopChange";
-    colorButton2.innerHTML = "Stop Change";
-  } else if (
-    automaticChange === false &&
-    automaticChangeFunction === "stopChange"
-  ) {
-    clearInterval(colorChangeInterval);
-    colorButton2.innerHTML = "Change Automatically";
-    automaticChange = true;
-    automaticChangeFunction = "change";
-  }
-});
+colorButton.addEventListener("click", changeBackgroundColor);
