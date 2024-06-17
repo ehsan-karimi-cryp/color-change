@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "quicksand";
+    src: url("../fonts/Quicksand/static/Quicksand-Regular.ttf");
+    font-weight: 400;
+}
+html {
+    font-family: "quicksand", sans-serif;
+    font-size: 100%;
+}
